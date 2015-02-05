@@ -1,0 +1,136 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+#logo-container{
+	padding-top: 20px;
+}
+#header{
+	height: 100px;
+	background-color: #252946;
+}
+#body{
+	margin-top: -100px;
+	padding-top: 100px;
+	padding-left: 4%;
+	background-color: #e3e3e3;
+	min-height: 100%;
+}
+#search-wrapper{
+	display: inline-block;
+	width: 55%;
+	height: 40px;
+	border-radius: 20px;
+	background-color: #fff;
+	margin: 5% 0 0 0;
+	/*border: 1px solid transparant;*/
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
+	transition: border-color .3s ease-in-out;
+}
+#search-wrapper-error{
+	display: inline-block;
+}
+.error{
+	border-color: #c6150c !important; 
+}
+.label-error{
+	color: #c6150c !important;
+}
+#search-wrapper span{
+	position: relative;
+	display: inline-block;
+	background-color: #252946;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	vertical-align: middle;
+	float: right;
+	border-radius: 20px;
+	width: 12%;
+	height: 100%;
+	cursor: pointer;
+	-webkit-transition-property: background-color;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease;
+}
+#search-wrapper span:hover{
+	color: #fff;
+	background-color: #3d4474;
+}
+#search-wrapper span:active{
+	color: #fff;
+	background-color: #252946;
+}
+#search-wrapper input{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 0 20px;
+	width:80%;
+	border: 1px;
+	height:38px;
+	line-height: 30px;
+}
+#view-container{
+	margin-top: 1%;
+	/*margin-bottom: 100px;*/
+}
+#view-container::after{
+	content: '';
+	height: 100px;
+}
+.view-block{
+	display: inline-block;
+	background-color: #fff;
+	min-height: 50px;
+	border-radius: 20px;
+	padding: 1%;
+	margin-top: 3%;
+	
+}
+#preview-wrapper{
+	width: 67%;
+	/*padding: 0;*/
+	margin-left: 15px;
+	/*margin-right: 3%;*/
+}
+#tree-wrapper{
+	width: 20%;
+	min-width: 200px;
+	margin-left: 15px;
+	overflow-x: auto;
+}
+#tree-wrapper .view-block-container {
+	max-height: 600px;
+}
+#tree-wrapper .view-block-container span{
+	position: absolute;
+	top: -3px;
+	right: 10px;
+}
+.view-block-container{
+	border: 1px solid #e3e3e3;
+	border-radius: 20px;
+	min-height: 40px;
+	padding: 5px;
+	display: none;
+	overflow: auto;
+}
+.iframe-preview{
+	width: 100%;
+	height: 700px;
+	border: none;
+}
+.ajax-loader{
+	background-image: url('/static/img/ajax-loader.gif');
+	background-repeat: no-repeat;
+	background-position: center center;
+}

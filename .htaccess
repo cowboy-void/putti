@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteCond $1 !^(index\.php|static|kcaptcha|files|robots\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+
+php_value display_errors 1
+php_value error_reporting 2047
